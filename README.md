@@ -1,0 +1,140 @@
+# Governance at Execution™ — Public Incident Case Study 01
+
+## Execution-Time Admissibility Under Environmental State Divergence
+
+**Research Organization:** BridgeCore AI™  
+**Author:** Grace Adjeli  
+**Architecture:** Governance at Execution™ v4.0  
+**Baseline Status:** FROZEN BASELINE  
+**Freeze Date:** September 6, 2026  
+**Repository Status:** Private Research in Progress
+
+---
+
+## Purpose
+
+This repository contains an adversarial validation of Governance at Execution™ v4.0 against a publicly disclosed AI incident.
+
+Case Study 01 examines Anthropic's publicly disclosed 2026 cybersecurity evaluation incidents as a test case for execution-time governance, environmental state divergence, delegated authority, admissibility revalidation, enforcement, and execution assurance.
+
+The purpose of this case study is not to demonstrate that Governance at Execution™ v4.0 is correct.
+
+The purpose is to determine where the architecture succeeds, where it fails, and what those results reveal about governing delegated AI action at execution.
+
+---
+
+## Research Question
+
+Can Governance at Execution™ v4.0 detect and prevent an AI agent from converting an environmentally available capability into an unauthorized action when the actual execution environment diverges from the state assumed when the task was authorized?
+
+---
+
+## Frozen Baseline
+
+Governance at Execution™ v4.0 is frozen in its current state before formal incident testing begins.
+
+The architecture will be evaluated against publicly disclosed incident facts without retroactively modifying controls to accommodate known outcomes.
+
+Identified weaknesses, missing controls, ambiguous behaviors, or failed tests will be documented as findings rather than incorporated into the frozen baseline.
+
+Architectural changes resulting from those findings will be evaluated separately as candidates for a subsequent version.
+
+### Baseline Principle
+
+**The architecture must be tested as it existed when the case study began, not as we wish it had existed after knowing the outcome.**
+
+---
+
+## Initial Analytical Focus
+
+The case study will examine:
+
+- Decision State Awareness (DSA)
+- Environmental State Awareness (ESA)
+- State reconciliation
+- Material state change
+- Delegated authority
+- Execution-time admissibility
+- Decision-to-action boundaries
+- Revalidation
+- Bind-point enforcement
+- Human escalation
+- Decision evidence
+- Execution evidence
+- Conformity assurance
+- Continuous learning and control refinement
+
+---
+
+## Research Discipline
+
+Publicly reported facts will be distinguished from Governance at Execution™ analysis.
+
+The case study will not assume that Anthropic or any third party uses Governance at Execution™, DSA, ESA, admissibility evaluation, Refuse at Bind, or other BridgeCore AI™ concepts.
+
+These concepts are analytical mechanisms applied independently to the public incident record.
+
+The architecture will be evaluated using findings such as:
+
+**PASS | PARTIAL | FAIL | NOT APPLICABLE | INSUFFICIENT PUBLIC EVIDENCE**
+
+A failed test is considered a research finding, not something to be retroactively corrected in the frozen baseline.
+
+---
+
+## Emerging Hypotheses
+
+The following propositions may be examined during the case study but are not treated as validated findings at baseline:
+
+**Availability does not imply authorization.**
+
+**Capability does not confer authority.**
+
+**A change in environmental capability does not automatically expand delegated authority.**
+
+**A decision that was valid when made may not remain admissible when execution occurs.**
+
+**Unresolved material state divergence should not silently default to execution.**
+
+These propositions remain subject to testing.
+
+---
+
+## Case Study Status
+
+**Baseline established:** September 6, 2026  
+**Incident reconstruction:** Not started  
+**Control-by-control testing:** Not started  
+**Findings:** Not established  
+**Architecture modifications:** None permitted during baseline testing
+
+---
+
+## Intellectual Property and Publication Status
+
+Governance at Execution™ and associated BridgeCore AI™ research materials are under active development.
+
+This private research repository is not currently licensed for public reuse, redistribution, modification, or derivative use.
+
+A formal intellectual property and licensing review must be completed before this repository is made public.
+
+Third-party names and trademarks remain the property of their respective owners.
+
+---
+
+## Independence Statement
+
+This is an independent BridgeCore AI™ research case study based on publicly available information.
+
+It is not affiliated with, commissioned by, sponsored by, or endorsed by Anthropic or its evaluation partners.
+
+The case study evaluates Governance at Execution™ v4.0 as a governance architecture. It is not intended to assign fault to Anthropic, its personnel, or third-party evaluation organizations.
+
+---
+
+## Signature Principle
+
+> **Governance is not what is defined. It is what is enforced at execution.™**
+
+**Grace Adjeli**  
+BridgeCore AI™
