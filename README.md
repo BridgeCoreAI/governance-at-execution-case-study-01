@@ -139,6 +139,14 @@ A previous execution may change conditions that are material to the next evaluat
 
 Prior execution may therefore inform the next admissibility evaluation, but it does not establish the outcome of that evaluation.
 
+### Material Uncertainty
+
+A consequential execution must not proceed when a material condition required for admissibility cannot be sufficiently established.
+
+A known violation and material uncertainty are distinct governance findings. A known violation supports a determination that the execution is inadmissible. Material uncertainty prevents the required determination from being completed and results in an INDETERMINATE outcome.
+
+INDETERMINATE is not equivalent to admissible. Where material uncertainty prevents evaluation of a required condition, execution must not proceed until the uncertainty is resolved or the action is otherwise routed according to the applicable governance process.
+
 ## Baseline Status at Freeze
 
 **Baseline established:** September 6, 2026  
