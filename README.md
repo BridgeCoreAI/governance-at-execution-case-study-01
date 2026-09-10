@@ -23,6 +23,15 @@ The purpose is to determine where the architecture succeeds, where it fails, and
 
 ---
 
+## Problem Statement
+
+An AI agent may be authorized to perform a consequential action under one set of conditions, while the material conditions applicable when execution is attempted may differ. Prior authorization, prior approval, or a prior admissibility determination does not by itself establish whether the specific execution remains permissible under the conditions that apply at execution.
+
+The governance problem examined in this case study is therefore how to determine whether a specific consequential AI execution remains admissible under the material conditions applicable when execution is attempted, and how that determination must relate to enforcement before the action occurs.
+
+---
+
+
 ## Research Question
 
 Can Governance at Execution™ v4.0 detect and prevent an AI agent from converting an environmentally available capability into an unauthorized action when the actual execution environment diverges from the state assumed when the task was authorized?
