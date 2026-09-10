@@ -120,7 +120,16 @@ The minimum material context identified for evaluating a consequential execution
 
 **Principal + Action + Object + Target + Current State + Authorization Context**
 
-MVAC defines the minimum context that must be sufficiently established to evaluate whether the specific execution remains admissible under the conditions applicable when execution is attempted.
+MVAC defines the minimum context that must be sufficiently established to evaluate whether the specific execution remains 
+admissible under the conditions applicable when execution is attempted.
+
+### Authorization Continuity ≠ Action Admissibility
+
+Continued authorization of a principal, agent, workflow, or task does not by itself establish that a specific consequential execution remains admissible.
+
+Authorization answers whether the principal retains authority to act. Admissibility asks whether the particular action may proceed under the material conditions applicable when execution is attempted.
+
+A principal may therefore remain authorized while a specific execution is inadmissible, requires revalidation, or cannot be evaluated because material conditions are uncertain.
 
 ## Baseline Status at Freeze
 
