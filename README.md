@@ -147,6 +147,14 @@ A known violation and material uncertainty are distinct governance findings. A k
 
 INDETERMINATE is not equivalent to admissible. Where material uncertainty prevents evaluation of a required condition, execution must not proceed until the uncertainty is resolved or the action is otherwise routed according to the applicable governance process.
 
+### Execution Time Evidence Validity
+
+Evidence that supported a prior decision or admissibility evaluation does not automatically establish the material conditions applicable to a later consequential execution.
+
+Evidence validity is determined by whether the evidence remains applicable to the material conditions that exist when execution is attempted, not simply by how much time has elapsed since the evidence was collected.
+
+Where material conditions may have changed, the relevant state must be re-established before relying on the prior determination. A previously valid evaluation cannot substitute for evidence of the conditions applicable to the execution currently being evaluated.
+
 ## Baseline Status at Freeze
 
 **Baseline established:** September 6, 2026  
