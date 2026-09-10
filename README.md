@@ -108,6 +108,19 @@ The following propositions may be examined during the case study but are not tre
 These propositions remain subject to testing.
 
 ---
+## Conceptual Findings Pending Evidence Closure
+
+The conceptual analysis conducted after baseline freeze produced a set of propositions that provide a coherent answer to the Case Study 01 research problem.
+
+These propositions are recorded as conceptual findings rather than final empirical findings. Each remains subject to evidence closure to determine the strength of evidence supporting the claim.
+
+### Minimum Viable Admissibility Context (MVAC) v1.0
+
+The minimum material context identified for evaluating a consequential execution consists of:
+
+**Principal + Action + Object + Target + Current State + Authorization Context**
+
+MVAC defines the minimum context that must be sufficiently established to evaluate whether the specific execution remains admissible under the conditions applicable when execution is attempted.
 
 ## Baseline Status at Freeze
 
