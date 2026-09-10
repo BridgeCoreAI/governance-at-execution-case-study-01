@@ -131,6 +131,14 @@ Authorization answers whether the principal retains authority to act. Admissibil
 
 A principal may therefore remain authorized while a specific execution is inadmissible, requires revalidation, or cannot be evaluated because material conditions are uncertain.
 
+### Cross Execution Admissibility
+
+Admissibility is determined independently for each consequential execution. A prior admissibility determination does not automatically carry forward to a subsequent execution.
+
+A previous execution may change conditions that are material to the next evaluation. Those consequences are evaluated through the applicable MVAC components rather than by treating execution history itself as inherited permission.
+
+Prior execution may therefore inform the next admissibility evaluation, but it does not establish the outcome of that evaluation.
+
 ## Baseline Status at Freeze
 
 **Baseline established:** September 6, 2026  
