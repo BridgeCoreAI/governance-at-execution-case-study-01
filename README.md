@@ -109,13 +109,27 @@ These propositions remain subject to testing.
 
 ---
 
-## Case Study Status
+## Baseline Status at Freeze
 
 **Baseline established:** September 6, 2026  
 **Incident reconstruction:** Not started  
 **Control-by-control testing:** Not started  
 **Findings:** Not established  
 **Architecture modifications:** None permitted during baseline testing
+
+### Current Research Status
+
+**Status as of:** September 10, 2026
+
+**Incident reconstruction:** In progress  
+**Conceptual analysis:** Complete  
+**Conceptual closure:** Achieved  
+**Evidence inventory:** In progress  
+**Evidence Closure Audit:** In progress  
+**Empirical findings:** Pending evidence verification  
+**Frozen architecture modifications:** None
+
+Conceptual closure means that the case study has developed a coherent answer to the research problem. It does not mean that every conceptual claim has been empirically demonstrated. The Evidence Closure Audit is being conducted to determine the evidentiary strength supporting each claim before final findings are established.
 
 ---
 
