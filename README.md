@@ -171,6 +171,14 @@ Revalidation is triggered by material change or material uncertainty, not by ela
 
 Revalidation must occur before consequential execution proceeds. Where the required conditions cannot be sufficiently re-established, the execution remains subject to the applicable INDETERMINATE outcome rather than inheriting the prior determination.
 
+### Determination ≠ Enforcement
+
+An admissibility determination does not by itself prevent a consequential action from occurring. The determination must be connected to an enforcement mechanism capable of governing the execution before the action crosses the execution boundary.
+
+A governance process may correctly identify an execution as inadmissible or INDETERMINATE and still fail as a preventive control if the system can proceed despite that determination.
+
+Execution assurance therefore requires both a governance determination and evidence that the determination was enforced at the point where the consequential action could occur.
+
 ## Baseline Status at Freeze
 
 **Baseline established:** September 6, 2026  
