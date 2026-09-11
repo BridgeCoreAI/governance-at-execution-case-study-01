@@ -155,6 +155,14 @@ Evidence validity is determined by whether the evidence remains applicable to th
 
 Where material conditions may have changed, the relevant state must be re-established before relying on the prior determination. A previously valid evaluation cannot substitute for evidence of the conditions applicable to the execution currently being evaluated.
 
+### Decision Evidence ≠ Execution Assurance
+
+Decision evidence establishes the basis on which a decision or authorization was made. It does not, by itself, establish that a later execution remained admissible under the conditions applicable when the action was attempted.
+
+Execution assurance requires evidence that the material conditions relevant to the specific execution were evaluated at the appropriate execution boundary and that the resulting governance determination was enforced before the consequential action occurred.
+
+A well-documented decision may therefore provide strong decision evidence while still providing insufficient execution assurance. The strength of the governance conclusion must not exceed the strength of the evidence supporting what occurred at execution.
+
 ## Baseline Status at Freeze
 
 **Baseline established:** September 6, 2026  
