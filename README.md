@@ -187,6 +187,14 @@ The bind point is the execution boundary at which the governance determination b
 
 Governance at the bind point therefore connects admissibility to execution. An inadmissible or INDETERMINATE execution must not be able to proceed merely because the underlying system retains the technical capability to perform the action.
 
+### Human Escalation and Accountability
+
+Human escalation is a governance pathway for conditions requiring human authority or judgment. Escalation does not, by itself, resolve the condition that prevented autonomous execution from proceeding.
+
+Where an execution is escalated, the human decision must operate within the applicable authority, policy, and material context rather than functioning as an automatic override of the governance determination.
+
+The presence of a human in the decision path therefore does not by itself establish control effectiveness or execution assurance. Accountability for the resulting action must remain attributable and supported by evidence of the decision and execution.
+
 ## Baseline Status at Freeze
 
 **Baseline established:** September 6, 2026  
