@@ -163,6 +163,14 @@ Execution assurance requires evidence that the material conditions relevant to t
 
 A well-documented decision may therefore provide strong decision evidence while still providing insufficient execution assurance. The strength of the governance conclusion must not exceed the strength of the evidence supporting what occurred at execution.
 
+### Revalidation Triggered by Material State Change
+
+A prior decision or admissibility determination must be revalidated when a material condition relevant to the proposed execution has changed or can no longer be established as continuing to hold.
+
+Revalidation is triggered by material change or material uncertainty, not by elapsed time alone. Its purpose is to determine whether the conditions supporting the prior determination remain applicable to the execution currently being evaluated.
+
+Revalidation must occur before consequential execution proceeds. Where the required conditions cannot be sufficiently re-established, the execution remains subject to the applicable INDETERMINATE outcome rather than inheriting the prior determination.
+
 ## Baseline Status at Freeze
 
 **Baseline established:** September 6, 2026  
