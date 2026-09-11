@@ -179,6 +179,14 @@ A governance process may correctly identify an execution as inadmissible or INDE
 
 Execution assurance therefore requires both a governance determination and evidence that the determination was enforced at the point where the consequential action could occur.
 
+### Bind Point Enforcement
+
+For a governance determination to operate as a preventive control over consequential execution, enforcement must occur at a point where the action can still be permitted, constrained, paused, escalated, or refused before it becomes effective.
+
+The bind point is the execution boundary at which the governance determination becomes controlling over the proposed action. Enforcement after this boundary may detect or respond to an undesirable outcome, but it cannot establish that the execution was prevented.
+
+Governance at the bind point therefore connects admissibility to execution. An inadmissible or INDETERMINATE execution must not be able to proceed merely because the underlying system retains the technical capability to perform the action.
+
 ## Baseline Status at Freeze
 
 **Baseline established:** September 6, 2026  
