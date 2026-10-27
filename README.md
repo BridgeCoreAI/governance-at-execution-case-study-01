@@ -1,25 +1,66 @@
-# Governance at Execution™ — Public Incident Case Study 01
+# Governance at Execution™ | Public Incident Case Study 01
 
 ## Execution-Time Admissibility Under Environmental State Divergence
 
 **Research Organization:** BridgeCore AI™  
-**Author:** Grace Adjeli  
-**Architecture:** Governance at Execution™ v4.0  
-**Baseline Status:** FROZEN BASELINE  
-**Freeze Date:** September 6, 2026  
-**Repository Status:** Public research in progress. Empirical findings pending evidence closure.
+**Researcher:** Grace Adjeli  
+**Research Focus:** Agentic AI Security, Authorization Boundaries, and Execution Assurance  
+**Architecture Under Evaluation:** Governance at Execution™ v4.0  
+**Incident Context:** Anthropic's publicly disclosed 2026 cybersecurity evaluation incidents  
+**Frozen Baseline Date:** September 6, 2026  
+**Research Status:** In progress | Empirical findings pending evidence closure
 
 ---
 
-## Purpose
+## 1. Research Overview
 
-This repository contains an adversarial validation of Governance at Execution™ v4.0 against a publicly disclosed AI incident.
+As AI agents become capable of independently selecting tools, interacting with external systems, and executing consequential actions, cybersecurity governance must account for a critical distinction: an agent's technical ability to perform an action does not establish its authority to perform that action.
 
-Case Study 01 examines Anthropic's publicly disclosed 2026 cybersecurity evaluation incidents as a test case for execution-time governance, environmental state divergence, delegated authority, admissibility revalidation, enforcement, and execution assurance.
+This independent research examines that distinction through publicly disclosed Anthropic cybersecurity evaluation incidents.
 
-The purpose of this case study is not to demonstrate that Governance at Execution™ v4.0 is correct.
+The case study investigates how changes in an AI agent's execution environment may introduce capabilities, permissions, or operational conditions that differ from those assumed when the original task was authorized.
 
-The purpose is to determine where the architecture succeeds, where it fails, and what those results reveal about governing delegated AI action at execution.
+The central concern is whether an agent can convert an environmentally available capability into an action that exceeds its delegated authority.
+
+Using the frozen Governance at Execution™ v4.0 architecture as the evaluation baseline, this study examines how authorization boundaries, environmental state awareness, admissibility revalidation, and execution-time enforcement could govern these conditions.
+
+The research is designed to identify both the strengths and limitations of the architecture. It does not presume that Governance at Execution™ v4.0 would have prevented the reported behavior.
+
+## 2. Research Purpose
+
+The purpose of this case study is to evaluate whether Governance at Execution™ v4.0 provides sufficient mechanisms to identify, assess, and prevent consequential AI actions that fall outside authorized execution conditions.
+
+The analysis focuses on five questions:
+
+1. **Delegated authority:** What action was the AI agent authorized to perform, and what limits applied to that authority?
+
+2. **Environmental state:** What capabilities, permissions, or operational conditions were available when the agent attempted to act?
+
+3. **Authorization divergence:** Did the observed conditions materially differ from those assumed when the task was authorized?
+
+4. **Execution-time enforcement:** Could the architecture determine whether the specific action remained admissible and enforce that determination before execution?
+
+5. **Evidence and assurance:** What evidence would be required to establish whether the relevant governance controls operated as intended?
+
+The study uses publicly available incident information and independently developed governance analysis.
+
+It distinguishes documented incident facts, analytical interpretations, conceptual propositions, and empirically supported findings.
+
+Where public evidence is insufficient, the analysis will explicitly identify that limitation rather than infer an unsupported conclusion.
+
+## 3. Research Objective
+
+The objective is not merely to determine whether an AI agent behaved unexpectedly.
+
+It is to evaluate whether a governance architecture can maintain enforceable authorization boundaries when the operational conditions under which an agent acts differ from those originally approved.
+
+The investigation will assess Governance at Execution™ v4.0 without modifying its frozen baseline to accommodate incident-specific findings.
+
+Any identified architectural weaknesses, control gaps, or potential improvements will be documented separately and considered for subsequent development.
+
+**Research principle:**
+
+Governance is not what is defined. It is what is enforced at execution.™
 
 ---
 
