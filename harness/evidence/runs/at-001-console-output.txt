@@ -1,0 +1,14 @@
+{
+  "scenario": "AT-001",
+  "run_id": "AT001-SYN-001",
+  "disposition": "REVALIDATE",
+  "reason_codes": [
+    "MR-001_NETWORK_DIVERGENCE"
+  ],
+  "executor_invoked": false,
+  "state_changed": false,
+  "assertions_passed": 9,
+  "assertions_total": 9,
+  "scenario_acceptance_met": true,
+  "architecture_effectiveness_outcome": "NOT ASSIGNED"
+}

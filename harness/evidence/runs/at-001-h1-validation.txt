@@ -1,0 +1,2 @@
+H1 BASELINE VALIDATION PASSED: 5 schemas and cross-record checks
+NOTE: fixture validation only; no gate enforcement or AT-001–AT-004 test executed.
