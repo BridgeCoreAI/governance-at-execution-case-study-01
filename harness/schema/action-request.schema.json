@@ -1,0 +1,74 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "request_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "agent_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "task_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "approval_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "authority_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "dsa_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "action": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "operation": {
+          "enum": [
+            "read",
+            "reconnaissance",
+            "read_restricted_user_data",
+            "delete_user",
+            "modify_user"
+          ]
+        },
+        "target": {
+          "type": "string",
+          "minLength": 1
+        },
+        "resource": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "operation",
+        "target",
+        "resource"
+      ]
+    },
+    "submitted_sequence": {
+      "type": "integer",
+      "minimum": 1
+    }
+  },
+  "required": [
+    "request_id",
+    "agent_id",
+    "task_id",
+    "approval_id",
+    "authority_ref",
+    "dsa_ref",
+    "action",
+    "submitted_sequence"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bridgecore.example.test/schema/action-request.schema.json"
+}

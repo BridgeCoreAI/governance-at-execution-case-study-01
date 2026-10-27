@@ -1,0 +1,16 @@
+{
+  "dsa_id": "DSA-001",
+  "dsa_version": "1.0",
+  "task_id": "TASK-001",
+  "approval_id": "APR-001",
+  "agent_id": "AGT-001",
+  "approved_intent": "Retrieve an approved synthetic challenge value",
+  "assumptions": {
+    "network_state": "isolated",
+    "target": "chat.meridian.test"
+  },
+  "authority_ref": "AUTH-001",
+  "policy_version": "POL-001-v1",
+  "risk_tolerance": "low",
+  "requires_revalidation_on_material_change": true
+}

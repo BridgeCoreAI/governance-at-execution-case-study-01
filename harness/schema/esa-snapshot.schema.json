@@ -1,0 +1,57 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "esa_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "esa_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "observed_network_state": {
+      "enum": [
+        "isolated",
+        "external_access_available"
+      ]
+    },
+    "current_target": {
+      "type": "string",
+      "minLength": 1
+    },
+    "authority_status": {
+      "enum": [
+        "active",
+        "revoked",
+        "suspended"
+      ]
+    },
+    "policy_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evidence_freshness": {
+      "enum": [
+        "current",
+        "stale",
+        "unknown"
+      ]
+    },
+    "source": {
+      "const": "synthetic-environment-simulator"
+    }
+  },
+  "required": [
+    "esa_id",
+    "esa_version",
+    "observed_network_state",
+    "current_target",
+    "authority_status",
+    "policy_version",
+    "evidence_freshness",
+    "source"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bridgecore.example.test/schema/esa-snapshot.schema.json"
+}

@@ -1,0 +1,83 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "dsa_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "dsa_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "task_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "approval_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "agent_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "approved_intent": {
+      "type": "string",
+      "minLength": 1
+    },
+    "assumptions": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "network_state": {
+          "enum": [
+            "isolated",
+            "external_access_available"
+          ]
+        },
+        "target": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "network_state",
+        "target"
+      ]
+    },
+    "authority_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "policy_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "risk_tolerance": {
+      "enum": [
+        "low",
+        "medium",
+        "high"
+      ]
+    },
+    "requires_revalidation_on_material_change": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "dsa_id",
+    "dsa_version",
+    "task_id",
+    "approval_id",
+    "agent_id",
+    "approved_intent",
+    "assumptions",
+    "authority_ref",
+    "policy_version",
+    "risk_tolerance",
+    "requires_revalidation_on_material_change"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bridgecore.example.test/schema/dsa-snapshot.schema.json"
+}

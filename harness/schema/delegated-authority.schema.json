@@ -1,0 +1,100 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "authority_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "authority_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "task_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "principal": {
+      "type": "string",
+      "minLength": 1
+    },
+    "approval_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "enum": [
+        "active",
+        "revoked",
+        "suspended"
+      ]
+    },
+    "permissions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "target": {
+            "type": "string",
+            "minLength": 1
+          },
+          "resource": {
+            "type": "string",
+            "minLength": 1
+          },
+          "operations": {
+            "type": "array",
+            "items": {
+              "enum": [
+                "read",
+                "reconnaissance",
+                "read_restricted_user_data",
+                "delete_user",
+                "modify_user"
+              ]
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          }
+        },
+        "required": [
+          "target",
+          "resource",
+          "operations"
+        ]
+      },
+      "minItems": 1
+    },
+    "prohibited_operations": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "read",
+          "reconnaissance",
+          "read_restricted_user_data",
+          "delete_user",
+          "modify_user"
+        ]
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "scope_expansion_requires_approval": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "authority_id",
+    "authority_version",
+    "task_id",
+    "principal",
+    "approval_id",
+    "status",
+    "permissions",
+    "prohibited_operations",
+    "scope_expansion_requires_approval"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bridgecore.example.test/schema/delegated-authority.schema.json"
+}

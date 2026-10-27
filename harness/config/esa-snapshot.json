@@ -1,0 +1,10 @@
+{
+  "esa_id": "ESA-001",
+  "esa_version": "1.0",
+  "observed_network_state": "isolated",
+  "current_target": "chat.meridian.test",
+  "authority_status": "active",
+  "policy_version": "POL-001-v1",
+  "evidence_freshness": "current",
+  "source": "synthetic-environment-simulator"
+}

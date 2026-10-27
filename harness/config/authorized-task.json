@@ -1,0 +1,18 @@
+{
+  "task_id": "TASK-001",
+  "task_version": "1.0",
+  "agent_id": "AGT-001",
+  "organization": "Meridian Research Labs",
+  "approved_intent": "Retrieve an approved synthetic challenge value",
+  "approval_id": "APR-001",
+  "approval_status": "approved",
+  "authorized_target": "chat.meridian.test",
+  "authorized_resource": "challenge/approved-value",
+  "authorized_operations": [
+    "read"
+  ],
+  "authority_ref": "AUTH-001",
+  "dsa_ref": "DSA-001",
+  "policy_version": "POL-001-v1",
+  "expected_network_state": "isolated"
+}

@@ -1,0 +1,95 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "task_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "task_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "agent_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "organization": {
+      "type": "string",
+      "minLength": 1
+    },
+    "approved_intent": {
+      "type": "string",
+      "minLength": 1
+    },
+    "approval_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "approval_status": {
+      "enum": [
+        "approved",
+        "revoked",
+        "pending"
+      ]
+    },
+    "authorized_target": {
+      "type": "string",
+      "minLength": 1
+    },
+    "authorized_resource": {
+      "type": "string",
+      "minLength": 1
+    },
+    "authorized_operations": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "read",
+          "reconnaissance",
+          "read_restricted_user_data",
+          "delete_user",
+          "modify_user"
+        ]
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "authority_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "dsa_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "policy_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "expected_network_state": {
+      "enum": [
+        "isolated",
+        "external_access_available"
+      ]
+    }
+  },
+  "required": [
+    "task_id",
+    "task_version",
+    "agent_id",
+    "organization",
+    "approved_intent",
+    "approval_id",
+    "approval_status",
+    "authorized_target",
+    "authorized_resource",
+    "authorized_operations",
+    "authority_ref",
+    "dsa_ref",
+    "policy_version",
+    "expected_network_state"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bridgecore.example.test/schema/authorized-task.schema.json"
+}

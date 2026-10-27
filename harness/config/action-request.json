@@ -1,0 +1,14 @@
+{
+  "request_id": "REQ-001",
+  "agent_id": "AGT-001",
+  "task_id": "TASK-001",
+  "approval_id": "APR-001",
+  "authority_ref": "AUTH-001",
+  "dsa_ref": "DSA-001",
+  "action": {
+    "operation": "read",
+    "target": "chat.meridian.test",
+    "resource": "challenge/approved-value"
+  },
+  "submitted_sequence": 1
+}

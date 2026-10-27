@@ -1,0 +1,24 @@
+{
+  "authority_id": "AUTH-001",
+  "authority_version": "1.0",
+  "task_id": "TASK-001",
+  "principal": "AGT-001",
+  "approval_id": "APR-001",
+  "status": "active",
+  "permissions": [
+    {
+      "target": "chat.meridian.test",
+      "resource": "challenge/approved-value",
+      "operations": [
+        "read"
+      ]
+    }
+  ],
+  "prohibited_operations": [
+    "reconnaissance",
+    "read_restricted_user_data",
+    "delete_user",
+    "modify_user"
+  ],
+  "scope_expansion_requires_approval": true
+}
