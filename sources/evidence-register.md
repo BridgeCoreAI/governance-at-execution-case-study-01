@@ -94,6 +94,50 @@ Each material factual claim will be tracked using the following fields:
 | Limitations | Missing context, unresolved contradictions, or other caveats |
 | Assessment linkage | Applicable architecture mechanism, test, or finding |
 
+## CLM-001: Environmental State Divergence Enabled Public Internet Access
+
+**Incident ID:** INC-001  
+**Model:** Claude Opus 4.7  
+**Source IDs:** SRC-001, SRC-002  
+**Claim Classification:** Documented incident fact, attributed to Anthropic  
+**Verification Status:** Verified against both published source accounts  
+**Independent Reproduction:** Not performed
+
+### Claim
+
+During the Claude Opus 4.7 cybersecurity evaluation, the agent operated under instructions indicating that internet access was unavailable. However, a misconfiguration in the evaluation environment made the public internet accessible.
+
+### Source References
+
+- **SRC-001:** [Investigating three real-world incidents in our cybersecurity evaluations](https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals), July 30, 2026. See "Background on cyber evaluations" and "What happened"; notably the passages explaining the prompt's no-internet assertion and the evaluation misconfiguration.
+- **SRC-002:** [An alignment assessment of recent cybersecurity incidents](https://www.anthropic.com/research/alignment-assessment-cybersecurity-incidents), September 9, 2026. See "Introduction" and the section "Claude Opus 4.7 attacks a real target".
+
+### Evidence Assessment
+
+Both primary sources support the reported discrepancy between the agent's instructed operating conditions and the technical capabilities available during execution.
+
+The sources establish the **reported** presence of environmental state divergence. They do not independently provide BridgeCore AI with the original infrastructure configuration, network-control records, or complete technical evidence necessary to reproduce the condition.
+
+### Governance at Execution Relevance
+
+The incident presents an opportunity to evaluate whether Decision State Awareness (DSA) and Environmental State Awareness (ESA), as defined in the frozen Governance at Execution™ v4.0 architecture, could identify a material difference between assumed and actual execution conditions.
+
+This is an architectural assessment question, not a demonstrated control outcome.
+
+### Evidence Limitations
+
+- Original infrastructure configuration records have not been independently examined.
+- Environment-specific network access controls have not been independently tested.
+- The effectiveness of Governance at Execution™ v4.0 has not been established through this claim.
+
+### Next Assessment Activity
+
+Document the execution environment and authorization context before assessing applicable frozen architecture mechanisms.
+
+**Assessment Disposition:** No control PASS or FAIL determination assigned.
+
+---
+
 ## 6. Evidence Handling Rules
 
 1. Record provenance, publication dates, and later corrections.
@@ -116,7 +160,7 @@ Each material factual claim will be tracked using the following fields:
 ## 8. Research Status
 
 **Source identification:** Two primary Anthropic documents identified  
-**Claim-level verification:** Pending  
+**Claim-level verification:** CLM-001 verified against SRC-001 and SRC-002; further claim verification pending  
 **Incident reconstruction:** In progress according to the main research record; not completed in this register  
 **Control-by-control assessment:** Not established as completed  
 **Evidence Closure Audit:** In progress according to the main research record  
