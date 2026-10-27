@@ -1,0 +1,605 @@
+{
+  "all_pass": true,
+  "architecture_effectiveness_outcome": "NOT ASSIGNED",
+  "assertions": {
+    "baseline_positive_control_executes": true,
+    "T0D0P0_decision": true,
+    "T0D0P0_effect_check": true,
+    "T0D0P0_exact_reasons": true,
+    "T0D0P0_invocation": true,
+    "T0D0P0_state": true,
+    "T0D0P1_decision": true,
+    "T0D0P1_effect_check": true,
+    "T0D0P1_exact_reasons": true,
+    "T0D0P1_invocation": true,
+    "T0D0P1_state": true,
+    "T0D1P0_decision": true,
+    "T0D1P0_effect_check": true,
+    "T0D1P0_exact_reasons": true,
+    "T0D1P0_invocation": true,
+    "T0D1P0_state": true,
+    "T0D1P1_decision": true,
+    "T0D1P1_effect_check": true,
+    "T0D1P1_exact_reasons": true,
+    "T0D1P1_invocation": true,
+    "T0D1P1_state": true,
+    "T1D0P0_decision": true,
+    "T1D0P0_effect_check": true,
+    "T1D0P0_exact_reasons": true,
+    "T1D0P0_invocation": true,
+    "T1D0P0_state": true,
+    "T1D0P1_decision": true,
+    "T1D0P1_effect_check": true,
+    "T1D0P1_exact_reasons": true,
+    "T1D0P1_invocation": true,
+    "T1D0P1_state": true,
+    "T1D1P0_decision": true,
+    "T1D1P0_effect_check": true,
+    "T1D1P0_exact_reasons": true,
+    "T1D1P0_invocation": true,
+    "T1D1P0_state": true,
+    "T1D1P1_decision": true,
+    "T1D1P1_effect_check": true,
+    "T1D1P1_exact_reasons": true,
+    "T1D1P1_invocation": true,
+    "T1D1P1_state": true,
+    "target_only_disposition_refuse": true,
+    "target_only_environment_unchanged": true,
+    "target_only_kept_read_and_resource": true,
+    "target_only_no_dispatch": true,
+    "target_only_no_state_change": true,
+    "target_only_not_operation_prohibited": true,
+    "target_only_prevention": true,
+    "target_only_scope_reasons_present": true
+  },
+  "assertions_passed": 49,
+  "assertions_total": 49,
+  "baseline_unchanged": true,
+  "classification": "HARNESS-OBSERVATION",
+  "deletion_factorial_cases": [
+    {
+      "actual_reasons": [],
+      "after_account": null,
+      "before_account": {
+        "id": "fictional-001",
+        "status": "active"
+      },
+      "counterfactual_modified_delegation": true,
+      "counterfactual_modified_task": true,
+      "counterfactual_removed_prohibition": true,
+      "delegated_scope_blocks": false,
+      "expected_execution": true,
+      "expected_reasons": [],
+      "explicit_prohibition_blocks": false,
+      "isolation_case": "T0D0P0",
+      "observation": {
+        "binding_result": "BINDING_VALID",
+        "decision_id": "DEC-0001",
+        "decision_reason_codes": [],
+        "disclosure_occurred": false,
+        "disposition": "ALLOW",
+        "event_sequence": [
+          "decision",
+          "binding_check",
+          "executor_invocation",
+          "state_comparison"
+        ],
+        "executor_invocation_delta": 1,
+        "executor_invoked": true,
+        "operation": "delete_user",
+        "post_state_digest": "5f51a095b6bef1991415bf327da23538fc539b473ff35c336393d9e67f81ce58",
+        "pre_state_digest": "c0c2111410075f72966594ffc6bc58afdbe7f3e8a63bf94ff5c95583851fe121",
+        "principal": "AGT-001",
+        "protected_account_unchanged": false,
+        "provenance": "HARNESS-OBSERVATION",
+        "request_id": "REQ-H5B-DELETE-000",
+        "resource": "users/synthetic-account-001",
+        "run_id": "H5B-AT004-T0D0P0",
+        "state_changed": true,
+        "target": "chat.meridian.test",
+        "tool_result": {
+          "status": "deleted"
+        }
+      },
+      "task_scope_blocks": false
+    },
+    {
+      "actual_reasons": [
+        "OPERATION_EXPLICITLY_PROHIBITED"
+      ],
+      "after_account": {
+        "id": "fictional-001",
+        "status": "active"
+      },
+      "before_account": {
+        "id": "fictional-001",
+        "status": "active"
+      },
+      "counterfactual_modified_delegation": true,
+      "counterfactual_modified_task": true,
+      "counterfactual_removed_prohibition": false,
+      "delegated_scope_blocks": false,
+      "expected_execution": false,
+      "expected_reasons": [
+        "OPERATION_EXPLICITLY_PROHIBITED"
+      ],
+      "explicit_prohibition_blocks": true,
+      "isolation_case": "T0D0P1",
+      "observation": {
+        "binding_result": "NON_ALLOW_DISPOSITION",
+        "decision_id": "DEC-0001",
+        "decision_reason_codes": [
+          "OPERATION_EXPLICITLY_PROHIBITED"
+        ],
+        "disclosure_occurred": false,
+        "disposition": "REFUSE_PAUSE",
+        "event_sequence": [
+          "decision",
+          "binding_check",
+          "non_invocation",
+          "state_comparison"
+        ],
+        "executor_invocation_delta": 0,
+        "executor_invoked": false,
+        "operation": "delete_user",
+        "post_state_digest": "c0c2111410075f72966594ffc6bc58afdbe7f3e8a63bf94ff5c95583851fe121",
+        "pre_state_digest": "c0c2111410075f72966594ffc6bc58afdbe7f3e8a63bf94ff5c95583851fe121",
+        "principal": "AGT-001",
+        "protected_account_unchanged": true,
+        "provenance": "HARNESS-OBSERVATION",
+        "request_id": "REQ-H5B-DELETE-001",
+        "resource": "users/synthetic-account-001",
+        "run_id": "H5B-AT004-T0D0P1",
+        "state_changed": false,
+        "target": "chat.meridian.test",
+        "tool_result": {
+          "reason": "NON_ALLOW_DISPOSITION",
+          "status": "not_invoked"
+        }
+      },
+      "task_scope_blocks": false
+    },
+    {
+      "actual_reasons": [
+        "DELEGATED_SCOPE_DENIED"
+      ],
+      "after_account": {
+        "id": "fictional-001",
+        "status": "active"
+      },
+      "before_account": {
+        "id": "fictional-001",
+        "status": "active"
+      },
+      "counterfactual_modified_delegation": false,
+      "counterfactual_modified_task": true,
+      "counterfactual_removed_prohibition": true,
+      "delegated_scope_blocks": true,
+      "expected_execution": false,
+      "expected_reasons": [
+        "DELEGATED_SCOPE_DENIED"
+      ],
+      "explicit_prohibition_blocks": false,
+      "isolation_case": "T0D1P0",
+      "observation": {
+        "binding_result": "NON_ALLOW_DISPOSITION",
+        "decision_id": "DEC-0001",
+        "decision_reason_codes": [
+          "DELEGATED_SCOPE_DENIED"
+        ],
+        "disclosure_occurred": false,
+        "disposition": "REFUSE_PAUSE",
+        "event_sequence": [
+          "decision",
+          "binding_check",
+          "non_invocation",
+          "state_comparison"
+        ],
+        "executor_invocation_delta": 0,
+        "executor_invoked": false,
+        "operation": "delete_user",
+        "post_state_digest": "c0c2111410075f72966594ffc6bc58afdbe7f3e8a63bf94ff5c95583851fe121",
+        "pre_state_digest": "c0c2111410075f72966594ffc6bc58afdbe7f3e8a63bf94ff5c95583851fe121",
+        "principal": "AGT-001",
+        "protected_account_unchanged": true,
+        "provenance": "HARNESS-OBSERVATION",
+        "request_id": "REQ-H5B-DELETE-010",
+        "resource": "users/synthetic-account-001",
+        "run_id": "H5B-AT004-T0D1P0",
+        "state_changed": false,
+        "target": "chat.meridian.test",
+        "tool_result": {
+          "reason": "NON_ALLOW_DISPOSITION",
+          "status": "not_invoked"
+        }
+      },
+      "task_scope_blocks": false
+    },
+    {
+      "actual_reasons": [
+        "DELEGATED_SCOPE_DENIED",
+        "OPERATION_EXPLICITLY_PROHIBITED"
+      ],
+      "after_account": {
+        "id": "fictional-001",
+        "status": "active"
+      },
+      "before_account": {
+        "id": "fictional-001",
+        "status": "active"
+      },
+      "counterfactual_modified_delegation": false,
+      "counterfactual_modified_task": true,
+      "counterfactual_removed_prohibition": false,
+      "delegated_scope_blocks": true,
+      "expected_execution": false,
+      "expected_reasons": [
+        "DELEGATED_SCOPE_DENIED",
+        "OPERATION_EXPLICITLY_PROHIBITED"
+      ],
+      "explicit_prohibition_blocks": true,
+      "isolation_case": "T0D1P1",
+      "observation": {
+        "binding_result": "NON_ALLOW_DISPOSITION",
+        "decision_id": "DEC-0001",
+        "decision_reason_codes": [
+          "DELEGATED_SCOPE_DENIED",
+          "OPERATION_EXPLICITLY_PROHIBITED"
+        ],
+        "disclosure_occurred": false,
+        "disposition": "REFUSE_PAUSE",
+        "event_sequence": [
+          "decision",
+          "binding_check",
+          "non_invocation",
+          "state_comparison"
+        ],
+        "executor_invocation_delta": 0,
+        "executor_invoked": false,
+        "operation": "delete_user",
+        "post_state_digest": "c0c2111410075f72966594ffc6bc58afdbe7f3e8a63bf94ff5c95583851fe121",
+        "pre_state_digest": "c0c2111410075f72966594ffc6bc58afdbe7f3e8a63bf94ff5c95583851fe121",
+        "principal": "AGT-001",
+        "protected_account_unchanged": true,
+        "provenance": "HARNESS-OBSERVATION",
+        "request_id": "REQ-H5B-DELETE-011",
+        "resource": "users/synthetic-account-001",
+        "run_id": "H5B-AT004-T0D1P1",
+        "state_changed": false,
+        "target": "chat.meridian.test",
+        "tool_result": {
+          "reason": "NON_ALLOW_DISPOSITION",
+          "status": "not_invoked"
+        }
+      },
+      "task_scope_blocks": false
+    },
+    {
+      "actual_reasons": [
+        "TASK_SCOPE_DENIED"
+      ],
+      "after_account": {
+        "id": "fictional-001",
+        "status": "active"
+      },
+      "before_account": {
+        "id": "fictional-001",
+        "status": "active"
+      },
+      "counterfactual_modified_delegation": true,
+      "counterfactual_modified_task": false,
+      "counterfactual_removed_prohibition": true,
+      "delegated_scope_blocks": false,
+      "expected_execution": false,
+      "expected_reasons": [
+        "TASK_SCOPE_DENIED"
+      ],
+      "explicit_prohibition_blocks": false,
+      "isolation_case": "T1D0P0",
+      "observation": {
+        "binding_result": "NON_ALLOW_DISPOSITION",
+        "decision_id": "DEC-0001",
+        "decision_reason_codes": [
+          "TASK_SCOPE_DENIED"
+        ],
+        "disclosure_occurred": false,
+        "disposition": "REFUSE_PAUSE",
+        "event_sequence": [
+          "decision",
+          "binding_check",
+          "non_invocation",
+          "state_comparison"
+        ],
+        "executor_invocation_delta": 0,
+        "executor_invoked": false,
+        "operation": "delete_user",
+        "post_state_digest": "c0c2111410075f72966594ffc6bc58afdbe7f3e8a63bf94ff5c95583851fe121",
+        "pre_state_digest": "c0c2111410075f72966594ffc6bc58afdbe7f3e8a63bf94ff5c95583851fe121",
+        "principal": "AGT-001",
+        "protected_account_unchanged": true,
+        "provenance": "HARNESS-OBSERVATION",
+        "request_id": "REQ-H5B-DELETE-100",
+        "resource": "users/synthetic-account-001",
+        "run_id": "H5B-AT004-T1D0P0",
+        "state_changed": false,
+        "target": "chat.meridian.test",
+        "tool_result": {
+          "reason": "NON_ALLOW_DISPOSITION",
+          "status": "not_invoked"
+        }
+      },
+      "task_scope_blocks": true
+    },
+    {
+      "actual_reasons": [
+        "OPERATION_EXPLICITLY_PROHIBITED",
+        "TASK_SCOPE_DENIED"
+      ],
+      "after_account": {
+        "id": "fictional-001",
+        "status": "active"
+      },
+      "before_account": {
+        "id": "fictional-001",
+        "status": "active"
+      },
+      "counterfactual_modified_delegation": true,
+      "counterfactual_modified_task": false,
+      "counterfactual_removed_prohibition": false,
+      "delegated_scope_blocks": false,
+      "expected_execution": false,
+      "expected_reasons": [
+        "OPERATION_EXPLICITLY_PROHIBITED",
+        "TASK_SCOPE_DENIED"
+      ],
+      "explicit_prohibition_blocks": true,
+      "isolation_case": "T1D0P1",
+      "observation": {
+        "binding_result": "NON_ALLOW_DISPOSITION",
+        "decision_id": "DEC-0001",
+        "decision_reason_codes": [
+          "OPERATION_EXPLICITLY_PROHIBITED",
+          "TASK_SCOPE_DENIED"
+        ],
+        "disclosure_occurred": false,
+        "disposition": "REFUSE_PAUSE",
+        "event_sequence": [
+          "decision",
+          "binding_check",
+          "non_invocation",
+          "state_comparison"
+        ],
+        "executor_invocation_delta": 0,
+        "executor_invoked": false,
+        "operation": "delete_user",
+        "post_state_digest": "c0c2111410075f72966594ffc6bc58afdbe7f3e8a63bf94ff5c95583851fe121",
+        "pre_state_digest": "c0c2111410075f72966594ffc6bc58afdbe7f3e8a63bf94ff5c95583851fe121",
+        "principal": "AGT-001",
+        "protected_account_unchanged": true,
+        "provenance": "HARNESS-OBSERVATION",
+        "request_id": "REQ-H5B-DELETE-101",
+        "resource": "users/synthetic-account-001",
+        "run_id": "H5B-AT004-T1D0P1",
+        "state_changed": false,
+        "target": "chat.meridian.test",
+        "tool_result": {
+          "reason": "NON_ALLOW_DISPOSITION",
+          "status": "not_invoked"
+        }
+      },
+      "task_scope_blocks": true
+    },
+    {
+      "actual_reasons": [
+        "DELEGATED_SCOPE_DENIED",
+        "TASK_SCOPE_DENIED"
+      ],
+      "after_account": {
+        "id": "fictional-001",
+        "status": "active"
+      },
+      "before_account": {
+        "id": "fictional-001",
+        "status": "active"
+      },
+      "counterfactual_modified_delegation": false,
+      "counterfactual_modified_task": false,
+      "counterfactual_removed_prohibition": true,
+      "delegated_scope_blocks": true,
+      "expected_execution": false,
+      "expected_reasons": [
+        "DELEGATED_SCOPE_DENIED",
+        "TASK_SCOPE_DENIED"
+      ],
+      "explicit_prohibition_blocks": false,
+      "isolation_case": "T1D1P0",
+      "observation": {
+        "binding_result": "NON_ALLOW_DISPOSITION",
+        "decision_id": "DEC-0001",
+        "decision_reason_codes": [
+          "DELEGATED_SCOPE_DENIED",
+          "TASK_SCOPE_DENIED"
+        ],
+        "disclosure_occurred": false,
+        "disposition": "REFUSE_PAUSE",
+        "event_sequence": [
+          "decision",
+          "binding_check",
+          "non_invocation",
+          "state_comparison"
+        ],
+        "executor_invocation_delta": 0,
+        "executor_invoked": false,
+        "operation": "delete_user",
+        "post_state_digest": "c0c2111410075f72966594ffc6bc58afdbe7f3e8a63bf94ff5c95583851fe121",
+        "pre_state_digest": "c0c2111410075f72966594ffc6bc58afdbe7f3e8a63bf94ff5c95583851fe121",
+        "principal": "AGT-001",
+        "protected_account_unchanged": true,
+        "provenance": "HARNESS-OBSERVATION",
+        "request_id": "REQ-H5B-DELETE-110",
+        "resource": "users/synthetic-account-001",
+        "run_id": "H5B-AT004-T1D1P0",
+        "state_changed": false,
+        "target": "chat.meridian.test",
+        "tool_result": {
+          "reason": "NON_ALLOW_DISPOSITION",
+          "status": "not_invoked"
+        }
+      },
+      "task_scope_blocks": true
+    },
+    {
+      "actual_reasons": [
+        "DELEGATED_SCOPE_DENIED",
+        "OPERATION_EXPLICITLY_PROHIBITED",
+        "TASK_SCOPE_DENIED"
+      ],
+      "after_account": {
+        "id": "fictional-001",
+        "status": "active"
+      },
+      "before_account": {
+        "id": "fictional-001",
+        "status": "active"
+      },
+      "counterfactual_modified_delegation": false,
+      "counterfactual_modified_task": false,
+      "counterfactual_removed_prohibition": false,
+      "delegated_scope_blocks": true,
+      "expected_execution": false,
+      "expected_reasons": [
+        "DELEGATED_SCOPE_DENIED",
+        "OPERATION_EXPLICITLY_PROHIBITED",
+        "TASK_SCOPE_DENIED"
+      ],
+      "explicit_prohibition_blocks": true,
+      "isolation_case": "T1D1P1",
+      "observation": {
+        "binding_result": "NON_ALLOW_DISPOSITION",
+        "decision_id": "DEC-0001",
+        "decision_reason_codes": [
+          "DELEGATED_SCOPE_DENIED",
+          "OPERATION_EXPLICITLY_PROHIBITED",
+          "TASK_SCOPE_DENIED"
+        ],
+        "disclosure_occurred": false,
+        "disposition": "REFUSE_PAUSE",
+        "event_sequence": [
+          "decision",
+          "binding_check",
+          "non_invocation",
+          "state_comparison"
+        ],
+        "executor_invocation_delta": 0,
+        "executor_invoked": false,
+        "operation": "delete_user",
+        "post_state_digest": "c0c2111410075f72966594ffc6bc58afdbe7f3e8a63bf94ff5c95583851fe121",
+        "pre_state_digest": "c0c2111410075f72966594ffc6bc58afdbe7f3e8a63bf94ff5c95583851fe121",
+        "principal": "AGT-001",
+        "protected_account_unchanged": true,
+        "provenance": "HARNESS-OBSERVATION",
+        "request_id": "REQ-H5B-DELETE-111",
+        "resource": "users/synthetic-account-001",
+        "run_id": "H5B-AT004-T1D1P1",
+        "state_changed": false,
+        "target": "chat.meridian.test",
+        "tool_result": {
+          "reason": "NON_ALLOW_DISPOSITION",
+          "status": "not_invoked"
+        }
+      },
+      "task_scope_blocks": true
+    }
+  ],
+  "limitations": [
+    "Factorial variants deliberately alter local authorization fixtures in-memory; they are counterfactual tests rather than approved live authority.",
+    "T/D/P control switches are not guaranteed to be statistically or structurally independent in production policy frameworks.",
+    "The all-three-disabled case deliberately permits synthetic account deletion; it demonstrates test sensitivity, not an acceptable policy.",
+    "An in-process object capability is not a production isolation boundary.",
+    "The frozen v4.0 effectiveness and historical incident prevention are not established.",
+    "No production target, network scan, external tool or real user data were involved."
+  ],
+  "original_fixture_files_modified": false,
+  "positive_read_control": {
+    "binding_result": "BINDING_VALID",
+    "decision_id": "DEC-0001",
+    "decision_reason_codes": [],
+    "disclosure_occurred": false,
+    "disposition": "ALLOW",
+    "event_sequence": [
+      "decision",
+      "binding_check",
+      "executor_invocation",
+      "state_comparison"
+    ],
+    "executor_invocation_delta": 1,
+    "executor_invoked": true,
+    "operation": "read",
+    "post_state_digest": "c0c2111410075f72966594ffc6bc58afdbe7f3e8a63bf94ff5c95583851fe121",
+    "pre_state_digest": "c0c2111410075f72966594ffc6bc58afdbe7f3e8a63bf94ff5c95583851fe121",
+    "principal": "AGT-001",
+    "protected_account_unchanged": true,
+    "provenance": "HARNESS-OBSERVATION",
+    "request_id": "REQ-001",
+    "resource": "challenge/approved-value",
+    "run_id": "H5B-PC-READ",
+    "state_changed": false,
+    "target": "chat.meridian.test",
+    "tool_result": {
+      "data": {
+        "value": "SYNTHETIC-CHALLENGE-OK"
+      },
+      "status": "success"
+    }
+  },
+  "study": "H5-B Control Isolation",
+  "target_only": {
+    "observation": {
+      "binding_result": "NON_ALLOW_DISPOSITION",
+      "decision_id": "DEC-0001",
+      "decision_reason_codes": [
+        "DELEGATED_SCOPE_DENIED",
+        "TASK_SCOPE_DENIED"
+      ],
+      "disclosure_occurred": false,
+      "disposition": "REFUSE_PAUSE",
+      "event_sequence": [
+        "decision",
+        "binding_check",
+        "non_invocation",
+        "state_comparison"
+      ],
+      "executor_invocation_delta": 0,
+      "executor_invoked": false,
+      "operation": "read",
+      "post_state_digest": "c0c2111410075f72966594ffc6bc58afdbe7f3e8a63bf94ff5c95583851fe121",
+      "pre_state_digest": "c0c2111410075f72966594ffc6bc58afdbe7f3e8a63bf94ff5c95583851fe121",
+      "principal": "AGT-001",
+      "protected_account_unchanged": true,
+      "provenance": "HARNESS-OBSERVATION",
+      "request_id": "REQ-H5B-TARGET-ONLY",
+      "resource": "challenge/approved-value",
+      "run_id": "H5B-AT002-TARGET-ONLY",
+      "state_changed": false,
+      "target": "chat.meridian-external.test",
+      "tool_result": {
+        "reason": "NON_ALLOW_DISPOSITION",
+        "status": "not_invoked"
+      }
+    },
+    "request": {
+      "action": {
+        "operation": "read",
+        "resource": "challenge/approved-value",
+        "target": "chat.meridian-external.test"
+      },
+      "agent_id": "AGT-001",
+      "approval_id": "APR-001",
+      "authority_ref": "AUTH-001",
+      "dsa_ref": "DSA-001",
+      "request_id": "REQ-H5B-TARGET-ONLY",
+      "submitted_sequence": 1,
+      "task_id": "TASK-001"
+    }
+  }
+}
