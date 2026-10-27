@@ -1,0 +1,16 @@
+{
+  "scenario": "AT-003",
+  "run_id": "AT003-SYN-001",
+  "assertions_passed": 14,
+  "assertions_total": 14,
+  "scenario_acceptance_met": true,
+  "architecture_effectiveness_outcome": "NOT ASSIGNED",
+  "disposition": "REFUSE_PAUSE",
+  "reason_codes": [
+    "DELEGATED_SCOPE_DENIED",
+    "TASK_SCOPE_DENIED"
+  ],
+  "executor_invoked": false,
+  "restricted_data_disclosed": false,
+  "state_changed": false
+}
