@@ -352,27 +352,113 @@ Where an execution is escalated, the human decision must operate within the appl
 
 The presence of a human in the decision path therefore does not by itself establish control effectiveness or execution assurance. Accountability for the resulting action must remain attributable and supported by evidence of the decision and execution.
 
-## Baseline Status at Freeze
+## Evidence Inventory and Research Status
 
-**Baseline established:** September 6, 2026  
-**Incident reconstruction:** Not started  
-**Control-by-control testing:** Not started  
-**Findings:** Not established  
-**Architecture modifications:** None permitted during baseline testing
+### Evidence Management Approach
+
+This case study applies an evidence-driven approach to reconstructing publicly disclosed agentic AI cybersecurity incidents and evaluating Governance at Execution™ v4.0.
+
+The evidence inventory is intended to establish traceability between reported incident facts, analytical observations, architectural assessments, and resulting findings.
+
+Each evidence record will identify:
+
+- **Evidence ID:** A unique reference assigned to the source or evidence item.
+- **Source and provenance:** The originating organization, document, publication date, and source location.
+- **Relevant claim:** The specific incident fact or observation supported by the source.
+- **Evidence type:** Primary disclosure, secondary reporting, technical artifact, or independent analysis.
+- **Evidence limitations:** Missing context, restricted access, uncertainty, or other factors affecting interpretation.
+- **Assessment linkage:** The incident reconstruction, architectural control, or finding that relies on the evidence.
+- **Verification status:** Whether the source and its supporting information have been reviewed and verified.
+
+An identified source is not automatically sufficient evidence for every claim attributed to it.
+
+### Evidence Classification
+
+The investigation distinguishes four categories of information.
+
+| Category | Definition |
+|---|---|
+| Documented Incident Fact | Information directly supported by an attributable incident source |
+| Analytical Interpretation | A reasoned interpretation developed from documented facts, explicitly identified as analysis |
+| Conceptual Finding | An architectural or governance proposition derived from the research that remains subject to empirical verification |
+| Empirical Finding | A conclusion supported by documented assessment criteria, traceable evidence, and completed evaluation |
+
+The research will not present conceptual findings as empirically validated control outcomes.
+
+Where source material does not establish the relevant authorization conditions, execution sequence, or control behavior, the limitation must remain visible.
+
+### Evidence Sufficiency and Closure
+
+Evidence closure requires more than collecting references.
+
+For each material assessment, the research will examine whether the available evidence is:
+
+1. **Relevant:** It directly relates to the claim or control being assessed.
+2. **Attributable:** Its origin and supporting context can be identified.
+3. **Consistent:** Conflicting accounts or interpretations have been identified and evaluated.
+4. **Sufficient:** It supports the strength and scope of the proposed conclusion.
+5. **Traceable:** A reviewer can connect the finding to the supporting source and assessment method.
+
+When these conditions cannot be adequately established, the finding must retain its applicable uncertainty or evidence limitation.
+
+Evidence closure does not require forcing every assessment into a definitive PASS or FAIL outcome.
+
+### Baseline Status at Freeze
+
+**Freeze Date: September 6, 2026**
+
+| Research Activity | Status at Freeze |
+|---|---|
+| Governance at Execution™ v4.0 architecture | Frozen |
+| Formal incident reconstruction | Not started |
+| Control-by-control adversarial testing | Not started |
+| Empirical findings | Not established |
+| Modifications to the frozen baseline | Not permitted |
+
+The architecture is preserved as the original evaluation specimen. Findings discovered after the freeze must not be incorporated retroactively into that baseline.
 
 ### Current Research Status
 
-**Status as of:** October 27, 2026
+**Status as of October 27, 2026**
 
-**Incident reconstruction:** In progress  
-**Conceptual analysis:** Complete  
-**Conceptual closure:** Achieved  
-**Evidence inventory:** In progress  
-**Evidence Closure Audit:** In progress  
-**Empirical findings:** Pending evidence verification  
-**Frozen architecture modifications:** None
+| Research Activity | Recorded Status |
+|---|---|
+| Governance at Execution™ v4.0 baseline | Frozen |
+| Conceptual analysis | Complete |
+| Conceptual closure | Achieved |
+| Incident reconstruction | In progress |
+| Evidence inventory | In progress |
+| Evidence Closure Audit | In progress |
+| Empirical findings | Pending evidence verification |
+| Frozen architecture modifications | None |
 
-Conceptual closure means that the case study has developed a coherent answer to the research problem. It does not mean that every conceptual claim has been empirically demonstrated. The Evidence Closure Audit is being conducted to determine the evidentiary strength supporting each claim before final findings are established.
+These statuses reflect the existing research record. They do not imply that source-level verification, incident reconstruction, or control-by-control testing has been completed.
+
+### Research Status Interpretation
+
+**Conceptual closure** means the research has developed a coherent analytical response to its stated problem.
+
+It does not establish that the frozen architecture has been empirically demonstrated to detect or prevent the reported incident behavior.
+
+**Evidence closure** evaluates whether the available records support the conclusions drawn from the research.
+
+**Execution assurance** requires evidence not only of a governance determination, but also that the determination was enforced at the relevant execution boundary.
+
+The strength of any published conclusion must not exceed the strength of its supporting evidence.
+
+### Outstanding Evidence Activities
+
+The following activities remain subject to completion and verification:
+
+- Establishing a source-level inventory of the publicly disclosed incidents.
+- Reconstructing the relevant incident sequences.
+- Documenting the available authorization and environmental context.
+- Mapping incident conditions to the frozen architecture.
+- Applying defined assessment criteria to the available evidence.
+- Recording supported findings, limitations, and unresolved questions.
+- Completing the Evidence Closure Audit.
+
+These are outstanding research activities, not completed investigation results.
 
 ---
 
