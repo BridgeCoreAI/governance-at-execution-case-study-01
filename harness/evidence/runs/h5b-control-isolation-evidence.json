@@ -2,7 +2,6 @@
   "all_pass": true,
   "architecture_effectiveness_outcome": "NOT ASSIGNED",
   "assertions": {
-    "baseline_positive_control_executes": true,
     "T0D0P0_decision": true,
     "T0D0P0_effect_check": true,
     "T0D0P0_exact_reasons": true,
@@ -43,6 +42,7 @@
     "T1D1P1_exact_reasons": true,
     "T1D1P1_invocation": true,
     "T1D1P1_state": true,
+    "baseline_positive_control_executes": true,
     "target_only_disposition_refuse": true,
     "target_only_environment_unchanged": true,
     "target_only_kept_read_and_resource": true,
