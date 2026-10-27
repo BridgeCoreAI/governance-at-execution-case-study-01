@@ -7,7 +7,7 @@
 **Architecture:** Governance at Execution™ v4.0  
 **Baseline Status:** FROZEN BASELINE  
 **Freeze Date:** September 6, 2026  
-**Repository Status:** Private Research in Progress
+**Repository Status:** Public research in progress. Empirical findings pending evidence closure.
 
 ---
 
@@ -205,7 +205,7 @@ The presence of a human in the decision path therefore does not by itself establ
 
 ### Current Research Status
 
-**Status as of:** September 10, 2026
+**Status as of:** October 27, 2026
 
 **Incident reconstruction:** In progress  
 **Conceptual analysis:** Complete  
@@ -221,14 +221,12 @@ Conceptual closure means that the case study has developed a coherent answer to 
 
 ## Intellectual Property and Publication Status
 
-Governance at Execution™ and associated BridgeCore AI™ research materials are under active development.
-
-This private research repository is not currently licensed for public reuse, redistribution, modification, or derivative use.
-
-A formal intellectual property and licensing review must be completed before this repository is made public.
-
-Third-party names and trademarks remain the property of their respective owners.
-
+This repository is public for reading and reference as of October 27, 2026,
+following an intellectual property and licensing review by the owner.
+Governance at Execution(TM) and associated BridgeCore AI(TM) research materials
+remain under active development. All rights reserved; no license is granted
+for reuse, redistribution, modification, or derivative use. Third-party names
+and trademarks remain the property of their respective owners.
 ---
 
 ## Independence Statement
