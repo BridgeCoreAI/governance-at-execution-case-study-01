@@ -520,6 +520,80 @@ These are outstanding research activities, not completed investigation results.
 
 ---
 
+## Repository Navigation and Research Evidence Structure
+
+### Repository Organization
+
+This repository is organized to support transparent, traceable, and evidence-based evaluation of Governance at Execution™ v4.0 against publicly disclosed agentic AI cybersecurity incidents.
+
+The README serves as the central research overview. Supporting artifacts will document source evidence, incident reconstruction, architectural evaluation, and findings as the investigation progresses.
+
+The repository distinguishes **available research artifacts** from **planned investigation deliverables**.
+
+### Existing Research Artifacts
+
+| Artifact | Description | Status |
+|---|---|---|
+| [README.md](README.md) | Research overview, methodology, conceptual findings, and research status | Available |
+| [architecture/BASELINE.md](architecture/BASELINE.md) | Frozen architecture declaration and research integrity requirements | Available |
+| [architecture/gae-v4.0-frozen-baseline.png](architecture/gae-v4.0-frozen-baseline.png) | Governance at Execution™ v4.0 frozen architecture diagram | Available |
+
+The frozen baseline was established on September 6, 2026, and must not be altered to accommodate subsequent research findings.
+
+### Planned Investigation Evidence Structure
+
+The following directories and artifacts are proposed for development as the research progresses.
+
+| Directory | Planned Artifact | Research Purpose |
+|---|---|---|
+| `sources/` | `evidence-register.md` | Record public incident sources, provenance, supported claims, and verification status |
+| `investigation/` | `incident-reconstruction.md` | Reconstruct reported agent behavior and distinguish observed facts from inference |
+| `investigation/` | `event-and-action-timeline.md` | Document the sequence of reported events, actions, and relevant execution conditions |
+| `assessment/` | `admissibility-test-matrix.md` | Evaluate frozen architecture mechanisms against documented incident conditions |
+| `assessment/` | `evidence-closure-audit.md` | Examine the relevance, sufficiency, traceability, and limitations of supporting evidence |
+| `findings/` | `findings-register.md` | Record assessment outcomes, supporting evidence, confidence limitations, and unresolved issues |
+| `review/` | `limitations-and-disposition.md` | Document research limitations, review conclusions, and publication decisions |
+
+These files are planned research deliverables. Their inclusion in this table does not establish that the corresponding investigations, assessments, or findings have been completed.
+
+### Evidence Traceability Model
+
+The research will maintain traceability across six elements:
+
+**Source Evidence → Incident Reconstruction → Authorization and Environmental Context → Architecture Assessment → Finding → Evidence Closure**
+
+Each assessment outcome must be linked to the evidence supporting its conclusion.
+
+A finding must not be represented as empirically validated unless the corresponding assessment criteria and evidence requirements have been satisfied.
+
+### Research Artifact Controls
+
+The following controls apply to the investigation artifacts:
+
+1. **Frozen architecture protection:** The September 6, 2026 baseline remains unchanged throughout the evaluation.
+2. **Source provenance:** Incident claims must retain identifiable source references and supporting context.
+3. **Analytical separation:** Reported facts, researcher interpretations, and assessment conclusions must remain distinguishable.
+4. **Version accountability:** Research changes must be documented through repository history.
+5. **Evidence limitations:** Missing, incomplete, or conflicting evidence must be recorded without manufacturing certainty.
+6. **Publication review:** Research artifacts must undergo technical, evidentiary, intellectual property, and disclosure review before public release.
+
+### Research Completion Criteria
+
+This case study will be considered ready for final publication review when:
+
+- The defined incident scope has been documented.
+- Material incident claims have traceable sources.
+- The incident reconstruction has been reviewed.
+- The frozen architecture has been assessed against the supported incident conditions.
+- Assessment outcomes and evidence limitations have been recorded.
+- The Evidence Closure Audit has been completed.
+- The research conclusions accurately reflect the strength of the available evidence.
+- The research owner has approved the public release.
+
+Publication readiness does not require that every incident question be conclusively resolved. Unavailable evidence and unresolved uncertainty may remain legitimate findings when clearly documented and appropriately bounded.
+
+---
+
 ## Intellectual Property and Publication Status
 
 **Repository status:** Private research development. Public release pending evidence closure, technical review, and explicit approval by the research owner.
