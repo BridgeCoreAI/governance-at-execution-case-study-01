@@ -1,0 +1,110 @@
+{
+  "study": "H5-B Control Isolation",
+  "assertions_passed": 49,
+  "assertions_total": 49,
+  "all_pass": true,
+  "architecture_effectiveness_outcome": "NOT ASSIGNED",
+  "target_only_decision": "REFUSE_PAUSE",
+  "target_only_reasons": [
+    "DELEGATED_SCOPE_DENIED",
+    "TASK_SCOPE_DENIED"
+  ],
+  "deletion_factorial_cases": [
+    {
+      "case": "T0D0P0",
+      "decision": "ALLOW",
+      "reasons": [],
+      "executor_invoked": true,
+      "account_after": null
+    },
+    {
+      "case": "T0D0P1",
+      "decision": "REFUSE_PAUSE",
+      "reasons": [
+        "OPERATION_EXPLICITLY_PROHIBITED"
+      ],
+      "executor_invoked": false,
+      "account_after": {
+        "id": "fictional-001",
+        "status": "active"
+      }
+    },
+    {
+      "case": "T0D1P0",
+      "decision": "REFUSE_PAUSE",
+      "reasons": [
+        "DELEGATED_SCOPE_DENIED"
+      ],
+      "executor_invoked": false,
+      "account_after": {
+        "id": "fictional-001",
+        "status": "active"
+      }
+    },
+    {
+      "case": "T0D1P1",
+      "decision": "REFUSE_PAUSE",
+      "reasons": [
+        "DELEGATED_SCOPE_DENIED",
+        "OPERATION_EXPLICITLY_PROHIBITED"
+      ],
+      "executor_invoked": false,
+      "account_after": {
+        "id": "fictional-001",
+        "status": "active"
+      }
+    },
+    {
+      "case": "T1D0P0",
+      "decision": "REFUSE_PAUSE",
+      "reasons": [
+        "TASK_SCOPE_DENIED"
+      ],
+      "executor_invoked": false,
+      "account_after": {
+        "id": "fictional-001",
+        "status": "active"
+      }
+    },
+    {
+      "case": "T1D0P1",
+      "decision": "REFUSE_PAUSE",
+      "reasons": [
+        "OPERATION_EXPLICITLY_PROHIBITED",
+        "TASK_SCOPE_DENIED"
+      ],
+      "executor_invoked": false,
+      "account_after": {
+        "id": "fictional-001",
+        "status": "active"
+      }
+    },
+    {
+      "case": "T1D1P0",
+      "decision": "REFUSE_PAUSE",
+      "reasons": [
+        "DELEGATED_SCOPE_DENIED",
+        "TASK_SCOPE_DENIED"
+      ],
+      "executor_invoked": false,
+      "account_after": {
+        "id": "fictional-001",
+        "status": "active"
+      }
+    },
+    {
+      "case": "T1D1P1",
+      "decision": "REFUSE_PAUSE",
+      "reasons": [
+        "DELEGATED_SCOPE_DENIED",
+        "OPERATION_EXPLICITLY_PROHIBITED",
+        "TASK_SCOPE_DENIED"
+      ],
+      "executor_invoked": false,
+      "account_after": {
+        "id": "fictional-001",
+        "status": "active"
+      }
+    }
+  ]
+}
