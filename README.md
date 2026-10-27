@@ -246,6 +246,18 @@ The architecture will be evaluated using findings such as:
 
 A failed test is considered a research finding, not something to be retroactively corrected in the frozen baseline.
 
+### Independent Analytical Framework
+
+Governance at Execution™ v4.0 is an independently developed research architecture applied to the publicly disclosed incident record.
+
+The study does not claim that Anthropic or its evaluation partners implemented, adopted, or tested the architecture.
+
+Incident facts, researcher interpretations, architectural hypotheses, and evidence-supported assessment outcomes must remain distinguishable throughout the investigation.
+
+An inability to verify a control outcome from public evidence is not automatically evidence of control failure.
+
+Likewise, a conceptually plausible control is not evidence that the control was implemented or effective.
+
 ---
 
 ## Emerging Hypotheses
@@ -267,9 +279,55 @@ These propositions remain subject to testing.
 ---
 ## Conceptual Findings Pending Evidence Closure
 
-The conceptual analysis conducted after baseline freeze produced a set of propositions that provide a coherent answer to the Case Study 01 research problem.
+### Research Interpretation and Evidentiary Status
 
-These propositions are recorded as conceptual findings rather than final empirical findings. Each remains subject to evidence closure to determine the strength of evidence supporting the claim.
+The conceptual analysis conducted after the September 6, 2026 baseline freeze produced ten related findings addressing execution-time authorization, environmental state divergence, admissibility, evidence validity, and enforcement.
+
+Together, these findings establish an analytical response to the Case Study 01 research question.
+
+They are recorded as **conceptual findings**, not final empirical findings.
+
+Their inclusion does not establish that Governance at Execution™ v4.0 successfully detected, prevented, or otherwise controlled the behavior described in Anthropic's publicly disclosed cybersecurity evaluation incidents.
+
+Each finding remains subject to evidence closure and evaluation against the frozen architecture.
+
+### Conceptual Findings Index
+
+| ID | Finding | Principal Analytical Focus |
+|---|---|---|
+| CF-01 | Minimum Viable Admissibility Context (MVAC) v1.0 | Establishing the minimum material execution context |
+| CF-02 | Authorization Continuity ≠ Action Admissibility | Distinguishing continuing authority from permission for a specific action |
+| CF-03 | Cross Execution Admissibility | Independent evaluation of successive consequential executions |
+| CF-04 | Material Uncertainty | Preventing unresolved material uncertainty from defaulting to execution |
+| CF-05 | Execution Time Evidence Validity | Establishing whether evidence remains applicable to current conditions |
+| CF-06 | Decision Evidence ≠ Execution Assurance | Distinguishing documented authorization from evidence of enforced execution controls |
+| CF-07 | Revalidation Triggered by Material State Change | Reassessing admissibility when relevant conditions change |
+| CF-08 | Determination ≠ Enforcement | Connecting governance conclusions to actual preventive mechanisms |
+| CF-09 | Bind Point Enforcement | Enforcing admissibility before consequential action becomes effective |
+| CF-10 | Human Escalation and Accountability | Maintaining authority, attribution, and evidence during escalation |
+
+### Relationship to the Frozen Architecture
+
+These findings provide analytical propositions for assessing Governance at Execution™ v4.0.
+
+They must not be interpreted as controls newly incorporated into the frozen architecture, nor as proof that the architecture implements each proposition effectively.
+
+Where a conceptual finding identifies a requirement that the frozen architecture does not satisfy, that discrepancy must be documented as an assessment result rather than resolved through retroactive modification.
+
+### Evidence Closure Requirement
+
+For each conceptual finding, the investigation will establish:
+
+1. The specific proposition being evaluated.
+2. The relevant incident evidence and its limitations.
+3. The corresponding mechanisms in the frozen architecture.
+4. The criteria used to evaluate those mechanisms.
+5. The resulting assessment and supporting rationale.
+6. Any unresolved evidence or implementation uncertainty.
+
+No conceptual finding will be elevated to an empirical finding solely because its reasoning is internally consistent.
+
+The detailed conceptual findings follow below.
 
 ### Minimum Viable Admissibility Context (MVAC) v1.0
 
@@ -464,8 +522,9 @@ These are outstanding research activities, not completed investigation results.
 
 ## Intellectual Property and Publication Status
 
-This repository is public for reading and reference as of October 27, 2026,
-following an intellectual property and licensing review by the owner.
+**Repository status:** Private research development. Public release pending evidence closure, technical review, and explicit approval by the research owner.
+
+The repository was previously public on October 27, 2026. Its current private status does not negate prior public availability.
 Governance at Execution(TM) and associated BridgeCore AI(TM) research materials
 remain under active development. All rights reserved; no license is granted
 for reuse, redistribution, modification, or derivative use. Third-party names
