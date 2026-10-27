@@ -1,0 +1,143 @@
+{
+  "architecture_effectiveness_outcome": "NOT ASSIGNED",
+  "case_count": 10,
+  "cases": [
+    {
+      "classification": "HARNESS-OBSERVATION",
+      "diagnostic_result": "EXPECTED SAFE BEHAVIOR",
+      "disposition": "REFUSE_PAUSE",
+      "fault": "authority revoked before decision",
+      "gate": "NON_ALLOW_DISPOSITION",
+      "invocations": 0,
+      "issue_id": null,
+      "reasons": [
+        "AUTHORITY_INACTIVE"
+      ],
+      "safety_expectation_met": true,
+      "state_changed": false,
+      "test_id": "TC-001"
+    },
+    {
+      "classification": "HARNESS-OBSERVATION",
+      "diagnostic_result": "EXPECTED SAFE BEHAVIOR",
+      "fault": "revocation after ALLOW",
+      "gate": "CURRENT_STATE_INVALID",
+      "initial_disposition": "ALLOW",
+      "invocations": 0,
+      "issue_id": null,
+      "safety_expectation_met": true,
+      "state_changed": false,
+      "test_id": "TC-002"
+    },
+    {
+      "classification": "HARNESS-OBSERVATION",
+      "diagnostic_result": "EXPECTED SAFE BEHAVIOR",
+      "disposition": "REVALIDATE",
+      "fault": "stale ESA",
+      "invocations": 0,
+      "issue_id": null,
+      "reasons": [
+        "ESA_STALE"
+      ],
+      "safety_expectation_met": true,
+      "test_id": "TC-003"
+    },
+    {
+      "classification": "HARNESS-OBSERVATION",
+      "diagnostic_result": "EXPECTED SAFE BEHAVIOR",
+      "disposition": "REVALIDATE",
+      "fault": "ESA absent",
+      "invocations": 0,
+      "issue_id": null,
+      "safety_expectation_met": true,
+      "test_id": "TC-004"
+    },
+    {
+      "classification": "HARNESS-OBSERVATION",
+      "diagnostic_result": "EXPECTED SAFE BEHAVIOR",
+      "disposition": "REVALIDATE",
+      "fault": "policy-version mismatch",
+      "invocations": 0,
+      "issue_id": null,
+      "reasons": [
+        "MR-004_POLICY_DIVERGENCE"
+      ],
+      "safety_expectation_met": true,
+      "test_id": "TC-005"
+    },
+    {
+      "classification": "HARNESS-OBSERVATION",
+      "diagnostic_result": "EXPECTED SAFE BEHAVIOR",
+      "fault": "changed resource after ALLOW",
+      "gate": "BINDING_MISMATCH",
+      "initial_disposition": "ALLOW",
+      "invocations": 0,
+      "issue_id": null,
+      "safety_expectation_met": true,
+      "test_id": "TC-006"
+    },
+    {
+      "classification": "HARNESS-OBSERVATION",
+      "diagnostic_result": "NOT EVALUABLE",
+      "fault": "identical decision reused twice",
+      "first_binding": "BINDING_VALID",
+      "issue_id": "H5C-G02",
+      "note": "Binding accepted twice; test does not claim two real tool invocations. Single-use authorization not specified.",
+      "safety_expectation_met": false,
+      "second_binding": "BINDING_VALID",
+      "test_id": "TC-007"
+    },
+    {
+      "classification": "HARNESS-OBSERVATION",
+      "diagnostic_result": "OBSERVED FAILURE",
+      "exception_type": "RuntimeError",
+      "executor_invocations": 1,
+      "fault": "evidence collector fails after mock execution",
+      "issue_id": "H5C-G03",
+      "note": "Authorized read executed but no complete evidence returned; not a claim of unauthorized modification.",
+      "safety_expectation_met": false,
+      "state_changed": false,
+      "test_id": "TC-008"
+    },
+    {
+      "classification": "HARNESS-OBSERVATION",
+      "diagnostic_result": "OBSERVED FAILURE",
+      "disposition": "ALLOW",
+      "fault": "forged consistent ESA with divergent independent ground truth",
+      "ground_truth": {
+        "network_state": "external_access_available"
+      },
+      "invocations": 1,
+      "issue_id": "H5C-G04",
+      "note": "Synthetic telemetry-integrity gap; harness has no authenticated source of truth.",
+      "safety_expectation_met": false,
+      "test_id": "TC-009",
+      "unverified_esa_claim": "isolated"
+    },
+    {
+      "account_after": null,
+      "account_before": {
+        "id": "fictional-001",
+        "status": "active"
+      },
+      "classification": "HARNESS-OBSERVATION",
+      "diagnostic_result": "OBSERVED FAILURE",
+      "direct_store_result": {
+        "status": "deleted"
+      },
+      "executor_invocations": 0,
+      "fault": "trusted in-process store access bypasses dispatch",
+      "issue_id": "H5C-G05",
+      "note": "Privileged local test access, not a real external exploit.",
+      "safety_expectation_met": false,
+      "test_id": "TC-010"
+    }
+  ],
+  "diagnostic_objective_met": true,
+  "phase": "H5-C",
+  "provenance": "HARNESS-OBSERVATION",
+  "safety_met": 6,
+  "safety_not_met": 4,
+  "unmodified_h1_h3_source": true,
+  "warning": "Correct diagnostic classification does not mean a failed safeguard passed. Test outcomes do not establish frozen-architecture effectiveness."
+}
