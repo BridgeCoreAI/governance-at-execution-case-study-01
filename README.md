@@ -64,6 +64,128 @@ Governance is not what is defined. It is what is enforced at execution.™
 
 ---
 
+## Research Question
+
+Can Governance at Execution™ v4.0 detect and prevent an AI agent from converting an environmentally available capability into an unauthorized action when the actual execution environment diverges from the state assumed when the task was authorized?
+
+## Incident Scope
+
+This case study examines Anthropic's publicly disclosed 2026 cybersecurity evaluation incidents as an independent research subject.
+
+The investigation focuses on agentic behavior involving potential deviations from delegated authority, unexpected use of available capabilities, and differences between authorized task conditions and the environment in which an action was attempted.
+
+The analysis considers:
+
+1. **Authorized task and delegated authority:** The task assigned to the agent, its intended purpose, and any documented authorization boundaries.
+
+2. **Observed agent behavior:** Actions, decisions, tool interactions, or other behavior described in the available incident evidence.
+
+3. **Execution environment:** Relevant tools, permissions, resources, and environmental conditions available to the agent.
+
+4. **Potential authorization divergence:** Whether the agent's observed behavior or execution conditions differed materially from the documented authorization context.
+
+5. **Security and governance implications:** The actual or potential consequences of the behavior, including unauthorized access, execution, or other security-relevant outcomes.
+
+6. **Control and enforcement implications:** Whether the frozen Governance at Execution™ v4.0 architecture provides mechanisms that could identify, constrain, escalate, or prevent the identified behavior.
+
+The investigation relies on publicly available information. It does not presume access to Anthropic's internal systems, confidential incident records, model weights, or nonpublic execution traces.
+
+Where the public record does not establish a fact, the analysis will identify the evidentiary limitation rather than treat an inference as an observed event.
+
+## Investigation Methodology
+
+The case study follows a structured, evidence-driven approach consisting of six stages.
+
+### Stage 1: Source Identification and Evidence Collection
+
+Identify relevant public disclosures, technical reports, research publications, and other attributable materials describing the incidents under examination.
+
+For each source, record its publication information, relevant factual claims, supporting passages, and relationship to the research question.
+
+Distinguish primary disclosures from secondary reporting and independent commentary.
+
+### Stage 2: Incident Reconstruction
+
+Reconstruct the reported sequence of agent behavior using the available evidence.
+
+Document the known or reported task, operating conditions, tool availability, observed actions, and reported outcomes.
+
+Where the sequence cannot be established from public evidence, identify the unresolved gap.
+
+Reconstruction must distinguish what the source reports from what the researcher infers.
+
+### Stage 3: Authorization and Environmental State Analysis
+
+Evaluate the reported behavior against the relevant authorization and environmental context.
+
+The analysis examines:
+
+- What the agent was authorized to do.
+- What capabilities were available.
+- Whether available capabilities exceeded documented authority.
+- Whether material operating conditions changed.
+- Whether those changes affected the admissibility of the proposed action.
+
+Where authorization conditions are not publicly documented, the study must not invent them.
+
+### Stage 4: Frozen Architecture Evaluation
+
+Assess the reconstructed incident against Governance at Execution™ v4.0 as frozen on September 6, 2026.
+
+Evaluate relevant architectural mechanisms, including:
+
+- Decision State Awareness (DSA)
+- Environmental State Awareness (ESA)
+- State reconciliation
+- Delegated authority
+- Execution-time admissibility
+- Material-change revalidation
+- Bind-point enforcement
+- Human escalation
+- Decision and execution evidence
+
+The architecture must not be modified during evaluation to accommodate incident-specific findings.
+
+### Stage 5: Evidence Evaluation and Findings
+
+Evaluate each assessment conclusion against its supporting evidence.
+
+Use the following classifications:
+
+**PASS | PARTIAL | FAIL | NOT APPLICABLE | INSUFFICIENT PUBLIC EVIDENCE**
+
+These classifications must be supported by explicit assessment criteria and traceable evidence.
+
+A finding must distinguish observed incident facts, architectural interpretation, demonstrated control behavior, and unsupported assumptions.
+
+Conceptual coherence alone does not establish empirical control effectiveness.
+
+### Stage 6: Evidence Closure and Research Reporting
+
+Review the supporting evidence for completeness, relevance, consistency, and sufficiency.
+
+Document unresolved questions, conflicting information, evidentiary limitations, and outstanding verification requirements.
+
+Final findings will be reported only to the extent supported by the evidence.
+
+Identified architectural weaknesses and proposed improvements will be documented separately from the frozen baseline.
+
+## Investigative Integrity
+
+The study follows four research safeguards:
+
+**Evidence before conclusion.** Findings must be supported by attributable evidence rather than assumptions about agent behavior or system capabilities.
+
+**Authorization is not inferred from capability.** The technical ability to perform an action does not establish permission to perform it.
+
+**Uncertainty is documented.** Missing or conflicting evidence must not be presented as proof of either compliance or failure.
+
+**Determination is not enforcement.** An architecture's ability to identify an inadmissible action does not establish that the action would have been prevented.
+
+The purpose of this methodology is to support reproducible, defensible analysis of agentic AI behavior and execution-time governance controls.
+
+---
+
 ## Problem Statement
 
 An AI agent may be authorized to perform a consequential action under one set of conditions, while the material conditions applicable when execution is attempted may differ. Prior authorization, prior approval, or a prior admissibility determination does not by itself establish whether the specific execution remains permissible under the conditions that apply at execution.
@@ -72,12 +194,6 @@ The governance problem examined in this case study is therefore how to determine
 
 ---
 
-
-## Research Question
-
-Can Governance at Execution™ v4.0 detect and prevent an AI agent from converting an environmentally available capability into an unauthorized action when the actual execution environment diverges from the state assumed when the task was authorized?
-
----
 
 ## Frozen Baseline
 
