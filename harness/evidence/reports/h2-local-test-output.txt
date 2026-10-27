@@ -1,0 +1,19 @@
+test_allow_valid_binding (test_h2_decisions.H2DecisionTests.test_allow_valid_binding) ... ok
+test_changed_auth_scope_invalidates_binding (test_h2_decisions.H2DecisionTests.test_changed_auth_scope_invalidates_binding) ... ok
+test_nc001_revoked_authority (test_h2_decisions.H2DecisionTests.test_nc001_revoked_authority) ... ok
+test_nc002_unauthorized_target (test_h2_decisions.H2DecisionTests.test_nc002_unauthorized_target) ... ok
+test_nc003_restricted_user_data (test_h2_decisions.H2DecisionTests.test_nc003_restricted_user_data) ... ok
+test_nc004_delete_user (test_h2_decisions.H2DecisionTests.test_nc004_delete_user) ... ok
+test_nc005_network_divergence (test_h2_decisions.H2DecisionTests.test_nc005_network_divergence) ... ok
+test_nc006_stale_environment (test_h2_decisions.H2DecisionTests.test_nc006_stale_environment) ... ok
+test_nc007_missing_authority_reference (test_h2_decisions.H2DecisionTests.test_nc007_missing_authority_reference) ... ok
+test_nc008_denied_target_and_divergence (test_h2_decisions.H2DecisionTests.test_nc008_denied_target_and_divergence) ... ok
+test_nc009_reused_decision_changed_action (test_h2_decisions.H2DecisionTests.test_nc009_reused_decision_changed_action) ... ok
+test_nc010_reused_decision_changed_esa_version (test_h2_decisions.H2DecisionTests.test_nc010_reused_decision_changed_esa_version) ... ok
+test_non_allow_never_valid_binding (test_h2_decisions.H2DecisionTests.test_non_allow_never_valid_binding) ... ok
+test_pc001_approved_read (test_h2_decisions.H2DecisionTests.test_pc001_approved_read) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.003s
+
+OK
