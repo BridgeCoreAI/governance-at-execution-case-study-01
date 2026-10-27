@@ -1,0 +1,29 @@
+test_allow_valid_binding (test_h2_decisions.H2DecisionTests.test_allow_valid_binding) ... ok
+test_changed_auth_scope_invalidates_binding (test_h2_decisions.H2DecisionTests.test_changed_auth_scope_invalidates_binding) ... ok
+test_nc001_revoked_authority (test_h2_decisions.H2DecisionTests.test_nc001_revoked_authority) ... ok
+test_nc002_unauthorized_target (test_h2_decisions.H2DecisionTests.test_nc002_unauthorized_target) ... ok
+test_nc003_restricted_user_data (test_h2_decisions.H2DecisionTests.test_nc003_restricted_user_data) ... ok
+test_nc004_delete_user (test_h2_decisions.H2DecisionTests.test_nc004_delete_user) ... ok
+test_nc005_network_divergence (test_h2_decisions.H2DecisionTests.test_nc005_network_divergence) ... ok
+test_nc006_stale_environment (test_h2_decisions.H2DecisionTests.test_nc006_stale_environment) ... ok
+test_nc007_missing_authority_reference (test_h2_decisions.H2DecisionTests.test_nc007_missing_authority_reference) ... ok
+test_nc008_denied_target_and_divergence (test_h2_decisions.H2DecisionTests.test_nc008_denied_target_and_divergence) ... ok
+test_nc009_reused_decision_changed_action (test_h2_decisions.H2DecisionTests.test_nc009_reused_decision_changed_action) ... ok
+test_nc010_reused_decision_changed_esa_version (test_h2_decisions.H2DecisionTests.test_nc010_reused_decision_changed_esa_version) ... ok
+test_non_allow_never_valid_binding (test_h2_decisions.H2DecisionTests.test_non_allow_never_valid_binding) ... ok
+test_pc001_approved_read (test_h2_decisions.H2DecisionTests.test_pc001_approved_read) ... ok
+test_nc_exec001_unauthorized_target (test_h3_execution.H3ExecutionTests.test_nc_exec001_unauthorized_target) ... ok
+test_nc_exec002_restricted_user_read (test_h3_execution.H3ExecutionTests.test_nc_exec002_restricted_user_read) ... ok
+test_nc_exec003_account_deletion (test_h3_execution.H3ExecutionTests.test_nc_exec003_account_deletion) ... ok
+test_nc_exec004_environment_divergence (test_h3_execution.H3ExecutionTests.test_nc_exec004_environment_divergence) ... ok
+test_nc_exec005_changed_esa_version_before_dispatch (test_h3_execution.H3ExecutionTests.test_nc_exec005_changed_esa_version_before_dispatch) ... ok
+test_nc_exec006_direct_executor_no_capability (test_h3_execution.H3ExecutionTests.test_nc_exec006_direct_executor_no_capability) ... ok
+test_nc_exec007_defective_enforcement_is_detected (test_h3_execution.H3ExecutionTests.test_nc_exec007_defective_enforcement_is_detected) ... ok
+test_pc_exec001_authorized_challenge_read (test_h3_execution.H3ExecutionTests.test_pc_exec001_authorized_challenge_read) ... ok
+test_reused_decision_changed_request_before_dispatch (test_h3_execution.H3ExecutionTests.test_reused_decision_changed_request_before_dispatch) ... ok
+test_stale_esa_holds_execution (test_h3_execution.H3ExecutionTests.test_stale_esa_holds_execution) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 0.005s
+
+OK
